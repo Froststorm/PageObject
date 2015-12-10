@@ -13,7 +13,7 @@ public class LoginPage {
     @FindBy (css = "#password")
     WebElement passwordField;
 
-    @FindBy (xpath = ".//*[@id='login']/form/div[3]/input[3]")
+    @FindBy (css = ".btn.btn-primary.btn-block")
     WebElement signinButton;
 
     public LoginPage(WebDriver driver){
