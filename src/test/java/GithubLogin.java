@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
     public class GithubLogin{
 
-        private WebDriver driver;
+        public WebDriver driver;
         String baseUrl = "https://github.com/login";
 
         @BeforeMethod
@@ -22,6 +22,7 @@ import java.util.concurrent.TimeUnit;
             driver.get(baseUrl);
             LoginPage loginpage = new LoginPage(driver);
             loginpage.login("Froststorm","eiDv67VkGb");
+            System.out.println("Test message!");
         }
 
         @AfterMethod
