@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
         public void testUntitled2() {
             driver.get(baseUrl);
             LoginPage loginpage = new LoginPage(driver);
-            loginpage.login("Froststorm","eiDv67VkGb");
+            loginpage.login("Froststorm","123456");
             System.out.println(driver.getTitle());
             System.out.println("Test message!");
         }
